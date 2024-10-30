@@ -74,9 +74,7 @@ console.log(sum)
  * const anotherAcronym = generateAcronym("Federal Bureau Investigation"); // anotherAcronym will be "FBI"
  */
 function generateAcronym(sentence) {
-
 }
-
 
 /**
  * This function counts consonants in a string, with lowercase counting as 1 and uppercase as 2.

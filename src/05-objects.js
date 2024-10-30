@@ -40,7 +40,7 @@ const person2 = {
     city: 'New York'
 };
 
-console.log(getName(person2));
+console.log(getPersonName(person2));
 
 
 
@@ -58,9 +58,18 @@ console.log(getName(person2));
  * console.log(john); // Outputs { name: 'John Doe', age: 30 }
  *
  */
-function findPersonByName(persons, name) {
 
+//Nåede ikke lat lave færdig
+function findPersonByName(persons, name) {
+    return person.totalAge.name1;
 }
+
+const totalAge = findPersonByName([
+    {name1: 'John Doe', age: 30 },
+    {name1: 'Jane Doe', age: 25 }]
+);
+
+console.log(totalAge)
 
 
 /**
@@ -74,9 +83,7 @@ function findPersonByName(persons, name) {
  * // totalAge will be 55
  */
 function getTotalAge(persons) {
-
 }
-
 
 /**
  * This function checks for duplicate email addresses in an array of users.
