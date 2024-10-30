@@ -8,8 +8,15 @@
  * // person might be { name: 'John Doe', age: 30, city: 'New York' }
  */
 function createPersonObject() {
-
+    return {
+        name: 'John Doe',
+        age: 30,
+        city: 'New York'
+    };
 }
+
+const person = createPersonObject();
+console.log(person);
 
 
 /**
@@ -22,9 +29,21 @@ function createPersonObject() {
  * const personName = getPersonName({ name: 'John Doe', age: 30, city: 'New York' });
  * // personName will be 'John Doe'
  */
-function getPersonName(person) {
 
+function getPersonName(person) {
+    return person.name;
 }
+
+const person2 = {
+    name: 'John Doe',
+    age: 30,
+    city: 'New York'
+};
+
+console.log(getName(person2));
+
+
+
 
 
 /**

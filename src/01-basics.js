@@ -96,12 +96,14 @@ console.log(result3)
  */
 
 function toUpperCaseWithSmiley(str) {
-    return str.toUpperCaseWithSmiley();
+    return str.toUpperCase() + ':)';
 }
+
 const upper = toUpperCaseWithSmiley('hello');
-console.log(upper); // upper will be 'HELLO:)'
+console.log(upper);
+
 const anotherUpper = toUpperCaseWithSmiley('world');
-console.log(anotherUpper); // upper will be 'WORLD:)'
+console.log(anotherUpper);
 
 
 
