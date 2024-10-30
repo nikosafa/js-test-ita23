@@ -35,9 +35,17 @@ console.log(anotherResult6);
  * const outOfRange = isWithinRange(15, 1, 10); // outOfRange will be false
  */
 
-function isWithinRange(n, min, max) {
+//https://stackoverflow.com/questions/6454198/check-if-a-value-is-within-a-range-of-numbers
 
+function isWithinRange(n, min, max) {
+    return((n-min)*(n-max)<=0);
 }
+
+const inRange = isWithinRange(5, 1, 10); // inRange will be true
+const outOfRange = isWithinRange(15, 1, 10); // outOfRange will be false
+
+console.log(inRange)
+console.log(outOfRange)
 
 /**
  * This function checks if a string contains the string "ba"
@@ -51,9 +59,19 @@ function isWithinRange(n, min, max) {
  * const harborContainsBa = stringContainsBa("habanana"); // true
  */
 
-function stringContainsBa(string) {
+//https://www.w3schools.com/jsref/jsref_includes.asp
 
+function stringContainsBa(string) {
+    return string.includes('ba');
 }
+
+const bananaContainsBa = stringContainsBa("banana"); // true
+const harborContainsBa1 = stringContainsBa("harbor"); // false
+const harborContainsBa2 = stringContainsBa("habanana"); // true
+
+console.log(bananaContainsBa)
+console.log(harborContainsBa1)
+console.log(harborContainsBa2)
 
 
 /**
