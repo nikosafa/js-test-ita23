@@ -8,8 +8,12 @@
  * console.log(coolestTeacher); // Benjamin
  */
 function getCoolestTeacher() {
-    
+    return ('Benjamin');
 }
+const coolestTeacher = getCoolestTeacher('Benjamin');
+console.log(coolestTeacher); //Benjamin
+
+
 
 /**
  * This function multiplies two numbers and then adds a third number.
@@ -24,8 +28,16 @@ function getCoolestTeacher() {
  * const anotherResult = multiplyAndAdd(-1, 1, 2); // anotherResult will be 1
  */
 function multiplyAndAdd(a, b, c) {
-
+    return (a * b) + c;
 }
+
+const result = multiplyAndAdd(2, 3, 1); // result will be 7
+const anotherResult = multiplyAndAdd(-1, 1, 2); // anotherResult will be 1
+
+console.log(result);
+console.log(anotherResult);
+
+
 
 /**
  * This function returns the type of the provided variable.
@@ -37,9 +49,18 @@ function multiplyAndAdd(a, b, c) {
  * const result = determineType("Hello"); // result will be "string"
  * const anotherResult = determineType(42); // anotherResult will be "number"
  */
-function determineType(value) {
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+function determineType(value) {
+    return value
 }
+const result2 = determineType(typeof "Hello"); // result will be "string"
+const anotherResult2 = determineType(typeof 42); // anotherResult will be "number"
+
+console.log(result2)
+console.log(anotherResult2)
+
 
 /**
  * This function concatenates two strings with a space in between.
@@ -53,8 +74,12 @@ function determineType(value) {
  */
 
 function concatenateStringsWithSpace(a, b) {
+    return `${a} ${b}`;
 
 }
+const result3 = concatenateStringsWithSpace("Hello", "World"); // result will be "Hello World"
+console.log(result3)
+
 
 
 /**
@@ -71,8 +96,14 @@ function concatenateStringsWithSpace(a, b) {
  */
 
 function toUpperCaseWithSmiley(str) {
-
+    return str.toUpperCaseWithSmiley();
 }
+const upper = toUpperCaseWithSmiley('hello');
+console.log(upper); // upper will be 'HELLO:)'
+const anotherUpper = toUpperCaseWithSmiley('world');
+console.log(anotherUpper); // upper will be 'WORLD:)'
+
+
 
 /**
  * This function repeats a string a specified number of times with spaces in between.
