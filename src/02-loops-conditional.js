@@ -9,9 +9,18 @@
  * const anotherResult = isEven(7); // anotherResult will be false
  */
 
-function isEven(number) {
+// https://stackoverflow.com/questions/6211613/testing-whether-a-value-is-odd-or-even
+
+function isEven(n) {
+    n = Number(n);
+    return n === 0 || (n % 2 === 0);
 }
 
+const result6 = isEven(4);
+const anotherResult6 = isEven(7);
+
+console.log(result6);
+console.log(anotherResult6);
 
 /**
  * This function checks if a number is within a range.

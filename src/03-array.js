@@ -14,7 +14,22 @@
  * console.log(numbers); // [5]
  */
 function returnNumbers(start, finish) {
+    const numbersArray = [];
+    for (let i = start; i <= finish; i++) {
+        numbersArray.push(i);
+    }
+    return numbersArray;
 }
+
+const numbers1 = returnNumbers(2, 7);
+console.log(numbers1); // [2, 3, 4, 5, 6, 7]
+
+const numbers2 = returnNumbers(10, 11);
+console.log(numbers2); // [10, 11]
+
+const numbers3 = returnNumbers(5, 5);
+console.log(numbers3); // [5]
+
 
 /**
  * This function sums up all the values in an array.
@@ -27,8 +42,11 @@ function returnNumbers(start, finish) {
  * const anotherTotal = sumArray([-1, -2, 3]); // anotherTotal will be 0
  */
 
-function sumArray(array) {
+//https://sentry.io/answers/how-to-find-the-sum-of-an-array-of-numbers/
 
+
+function sumArray(array) {
+    return array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 }
 
 /**
@@ -42,10 +60,17 @@ function sumArray(array) {
  * const myArray = [1, 2, 3];
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
+
+
+//https://www.shecodes.io/athena/13097-how-to-push-an-element-to-an-array-in-javascript-using-push-method
+
 function pushElement(arr, elem) {
-
+    arr.push(elem);
+    return arr;
 }
-
+const myArray = [1, 2, 3];
+const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
+console.log(updatedArray);
 
 /**
  * This function removes all instances of a specific value from an array.
