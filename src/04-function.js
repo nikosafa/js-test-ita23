@@ -9,8 +9,13 @@
  * const message = generateMessage("Jack", 25); // "Hey Jack, happy 25 birthday!"
  */
 function generateMessage(name, age) {
-
+    return `Hey ${name}, happy ${age} birthday!`
 }
+
+const message = generateMessage("Jack", 25); // "Hey Jack, happy 25 birthday!"
+console.log(message);
+
+
 
 /**
  * This function capitalizes the first letter of every word in a sentence.
@@ -21,9 +26,21 @@ function generateMessage(name, age) {
  * Usage:
  * const title = titleCase("hello world"); // title will be "Hello World"
  */
-function titleCase(sentence) {
 
+//https://www.youtube.com/watch?v=8IEI-7fj2j4
+//https://www.freecodecamp.org/news/how-to-capitalize-words-in-javascript/
+
+function titleCase(sentence) {
+    let words = sentence.split(' ');
+
+    let titleCased = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+    return titleCased;
 }
+
+const title = titleCase("hello world"); // title will be "Hello World"
+console.log(title);
+
 
 /**
  * This function returns the sum of a range of numbers in an array.
@@ -36,8 +53,14 @@ function titleCase(sentence) {
  * const sum = sumOfRange(1, 4); // sum will be 10
  */
 function sumOfRange(start, end) {
-
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+        sum += i;
+    }
+    return sum;
 }
+const sum = sumOfRange(1, 4); // sum will be 10
+console.log(sum)
 
 
 /**

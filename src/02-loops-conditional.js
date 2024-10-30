@@ -10,8 +10,8 @@
  */
 
 function isEven(number) {
-
 }
+
 
 /**
  * This function checks if a number is within a range.
@@ -59,7 +59,7 @@ function stringContainsBa(string) {
  */
 function sumOfDigitsWithPosition(num) {
 
-}
+    }
 
 
 

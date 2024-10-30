@@ -14,9 +14,7 @@
  * console.log(numbers); // [5]
  */
 function returnNumbers(start, finish) {
-
 }
-
 
 /**
  * This function sums up all the values in an array.
